@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Václav Supik – tesař–truhlář. Poctivé řemeslo ze dřeva. Pergoly, terasy, přístřešky, nábytek z masivu." />
+  <title>Václav Supik – tesař–truhlář</title>
+  <link rel="icon" type="image/png" href="images/emblem.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a href="#top" class="logo-link">
+        <img src="images/emblem.png" alt="" class="logo-emblem" aria-hidden="true" />
+        <div class="logo-text">
+          <span class="logo-name">VÁCLAV SUPIK</span>
+          <span class="logo-profession">
+            <span class="logo-dash">—</span>
+            TESAŘ–TRUHLÁŘ
+            <span class="logo-dash">—</span>
+          </span>
+        </div>
+      </a>
+      <nav class="main-nav" id="main-nav">
+        <ul>
+          <li><a href="#sluzby">Služby</a></li>
+          <li><a href="#o-mne">O mně</a></li>
+          <li><a href="#realizace">Realizace</a></li>
+          <li><a href="#reference">Reference</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Otevřít menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="hero-img-wrap">
+        <img src="images/hero.png" alt="Dřevěná pergola – ukázka práce" class="hero-img" />
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="hero-content container">
+        <h1>
+          <span class="hero-name">VÁCLAV SUPIK</span>
+          <span class="hero-profession-line">
+            <span class="hero-dash">—</span>
+            <span class="hero-prof">TESAŘ–TRUHLÁŘ</span>
+            <span class="hero-dash">—</span>
+          </span>
+        </h1>
+        <p class="hero-slogan"><em>Poctivé řemeslo ze dřeva</em></p>
+        <div class="hero-btns">
+          <a href="#kontakt" class="btn btn-primary">Nezávazná poptávka</a>
+          <a href="tel:+420605812480" class="btn btn-secondary">Zavolat</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section" id="sluzby">
+      <div class="container">
+        <h2 class="section-title">Služby</h2>
+        <p class="section-subtitle">Co pro vás mohu zhotovit</p>
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">&#9632;</div>
+            <h3>Pergoly</h3>
+            <p>Zakázková výroba dřevěných pergol pro zahradu i terasu – přírodní materiál, trvanlivé provedení.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">&#9632;</div>
+            <h3>Terasy</h3>
+            <p>Dřevěné terasy z kvalitního řeziva, přizpůsobené vašemu pozemku a požadavkům.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">&#9632;</div>
+            <h3>Přístřešky pro auta</h3>
+            <p>Pevné a estetické dřevěné přístřešky – ochrana vozidla s pěkným vzhledem.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">&#9632;</div>
+            <h3>Dřevěné fasády</h3>
+            <p>Obkladové fasády z přírodního dřeva, které vydrží a skvěle vypadají.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">&#9632;</div>
+            <h3>Ploty</h3>
+            <p>Dřevěné ploty a oplocení na míru – od jednoduchých laťkových až po masivní provedení.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">&#9632;</div>
+            <h3>Schodiště</h3>
+            <p>Výroba a montáž dřevěných schodišť – interiér i exteriér, klasické i moderní tvary.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">&#9632;</div>
+            <h3>Nábytek z masivu</h3>
+            <p>Stolky, lavice, police, skříně – vše z masivního dřeva, přesně podle vašeho přání.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section section-alt" id="o-mne">
+      <div class="container about-inner">
+        <div class="about-img-wrap">
+          <img src="images/about.png" alt="Václav Supik při práci" />
+        </div>
+        <div class="about-text">
+          <h2 class="section-title">O mně</h2>
+          <p>
+            Jmenuji se Václav Supik a tesařsko-truhlářskému řemeslu se věnuji již více než 20 let.
+            Za tu dobu jsem realizoval stovky zakázek – od jednoduchých plotů a pergol až po složité
+            střešní konstrukce a schodiště.
+          </p>
+          <p>
+            Pracuji výhradně s kvalitním, pečlivě vybraným dřevem. Každá zakázka je pro mě jedinečná
+            a přistupuji k ní s plným nasazením. Záleží mi na spokojenosti zákazníka – proto vždy
+            dbám na precizní provedení, dodržení dohodnutých termínů a férové jednání.
+          </p>
+          <p>
+            Nabízím bezplatnou konzultaci a nezávaznou cenovou nabídku přímo u vás. Neváhejte mě
+            kontaktovat – rád se přijedu podívat a poradit.
+          </p>
+          <ul class="about-facts">
+            <li><strong>20+</strong> let zkušeností</li>
+            <li><strong>500+</strong> realizovaných zakázek</li>
+            <li><strong>100%</strong> poctivá práce</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="section" id="realizace">
+      <div class="container">
+        <h2 class="section-title">Realizace</h2>
+        <p class="section-subtitle">Ukázky hotových prací</p>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="images/gallery1.png" alt="Dřevěná pergola" />
+            <div class="gallery-caption">
+              <h4>Pergola na zahradu</h4>
+              <p>Dubová pergola s okapnicí, Brno</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="images/gallery2.png" alt="Dřevěná terasa" />
+            <div class="gallery-caption">
+              <h4>Terasa z modřínu</h4>
+              <p>Venkovní terasa 40 m², Blansko</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="images/gallery3.png" alt="Přístřešek pro auto" />
+            <div class="gallery-caption">
+              <h4>Přístřešek pro dvě auta</h4>
+              <p>Smrkový přístřešek, Vyškov</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="images/gallery4.svg" alt="Dřevěné schodiště" />
+            <div class="gallery-caption">
+              <h4>Interiérové schodiště</h4>
+              <p>Masivní dub, Brno-venkov</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="images/gallery5.svg" alt="Dřevěný plot" />
+            <div class="gallery-caption">
+              <h4>Plot a brána</h4>
+              <p>Laťkový plot z akátu, Kuřim</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="images/gallery6.svg" alt="Nábytek z masivu" />
+            <div class="gallery-caption">
+              <h4>Jídelní stůl z masivu</h4>
+              <p>Dubový stůl na zakázku, Tišnov</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section class="section section-alt" id="reference">
+      <div class="container">
+        <h2 class="section-title">Reference</h2>
+        <p class="section-subtitle">Co říkají zákazníci</p>
+        <div class="reviews-grid">
+          <div class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">
+              „S prací pana Václava Supíka jsem byl velmi spokojený. Dělal mi stání pro dvě auta
+              a terasu s pergolou a vše proběhlo bez problémů.
+              Oceňuji hlavně jeho ochotu poradit s výběrem dřeva i celkovým řešením. Komunikace
+              byla rychlá a na všem jsme se bez potíží domluvili. Výsledek je precizní a kvalitně
+              odvedená práce. Určitě doporučuji."
+            </p>
+            <div class="review-author">
+              <strong>Tomáš Majerčiak</strong>
+              <span>Řeka</span>
+            </div>
+          </div>
+          <div class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">
+              „Objednal jsem přístřešek pro auta a plot. Pan Václav byl velmi ochotný, poradil
+              s výběrem dřeva a navrhl nejlepší řešení. Výsledek předčil moje očekávání.
+              Sousedé se pořád ptají, kde jsem to nechal dělat."
+            </p>
+            <div class="review-author">
+              <strong>Miroslav Kříž</strong>
+              <span>Blansko</span>
+            </div>
+          </div>
+          <div class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">
+              „Nechali jsme si vyrobit schodiště z dubového masivu a jsme nadšení. Precizní práce,
+              krásné zpracování a pan Supik byl vždy k zastižení a komunikoval na výbornou.
+              Určitě se obrátíme znovu."
+            </p>
+            <div class="review-author">
+              <strong>Petra a Tomáš Novotní</strong>
+              <span>Kuřim</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="kontakt">
+      <div class="container">
+        <h2 class="section-title">Kontakt</h2>
+        <p class="section-subtitle">Nezávazná poptávka nebo dotaz</p>
+        <div class="contact-inner">
+          <div class="contact-info">
+            <h3>Václav Supik</h3>
+            <p class="contact-profession">tesař–truhlář</p>
+            <ul class="contact-list">
+              <li>
+                <span class="contact-label">Telefon:</span>
+                <a href="tel:+420605812480">+420 605 812 480</a>
+              </li>
+              <li>
+                <span class="contact-label">E-mail:</span>
+                <a href="mailto:supikvaclav@seznam.cz">supikvaclav@seznam.cz</a>
+              </li>
+              <li>
+                <span class="contact-label">Adresa:</span>
+                <span>Komorní Lhotka 45, 739 53</span>
+              </li>
+              <li>
+                <span class="contact-label">Oblast:</span>
+                <span>Třinec, Frýdek-Místek, Český Těšín, Havířov a okolí</span>
+              </li>
+            </ul>
+            <p class="contact-hours">
+              <strong>Pracovní doba:</strong><br />
+              Po–Pá: 7:00–17:00<br />
+              So: po domluvě
+            </p>
+          </div>
+          <form class="contact-form" id="contact-form" novalidate>
+            <div class="form-group">
+              <label for="name">Jméno a příjmení *</label>
+              <input type="text" id="name" name="name" required placeholder="Jan Novák" />
+            </div>
+            <div class="form-group">
+              <label for="contact">Telefon nebo e-mail *</label>
+              <input type="text" id="contact" name="contact" required placeholder="+420 xxx xxx xxx" />
+            </div>
+            <div class="form-group">
+              <label for="service">Typ služby</label>
+              <select id="service" name="service">
+                <option value="">– Vyberte –</option>
+                <option>Pergola</option>
+                <option>Terasa</option>
+                <option>Přístřešek pro auto</option>
+                <option>Dřevěná fasáda</option>
+                <option>Plot</option>
+                <option>Schodiště</option>
+                <option>Nábytek z masivu</option>
+                <option>Jiné</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Zpráva *</label>
+              <textarea id="message" name="message" rows="5" required placeholder="Popište, co potřebujete..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Odeslat poptávku</button>
+            <p class="form-note">* Povinná pole. Odpovím do 24 hodin.</p>
+            <div class="form-success" id="form-success" hidden>
+              Děkuji za zprávu! Ozvu se co nejdříve.
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-logo">
+        <div class="footer-logo-text">
+          <span class="footer-logo-name">VÁCLAV SUPIK</span>
+          <span class="footer-logo-profession">
+            <span class="footer-dash">—</span>
+            TESAŘ–TRUHLÁŘ
+            <span class="footer-dash">—</span>
+          </span>
+          <span class="footer-logo-slogan"><em>Poctivé řemeslo ze dřeva</em></span>
+        </div>
+      </div>
+      <div class="footer-contact">
+        <p><a href="tel:+420605812480">+420 605 812 480</a></p>
+        <p><a href="mailto:supikvaclav@seznam.cz">supikvaclav@seznam.cz</a></p>
+      </div>
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="#sluzby">Služby</a></li>
+          <li><a href="#o-mne">O mně</a></li>
+          <li><a href="#realizace">Realizace</a></li>
+          <li><a href="#reference">Reference</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="copyright-year"></span> Václav Supik. Všechna práva vyhrazena.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
