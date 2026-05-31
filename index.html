@@ -279,15 +279,18 @@
           <form class="contact-form" id="contact-form" novalidate>
             <div class="form-group">
               <label for="name">Jméno a příjmení *</label>
-              <input type="text" id="name" name="name" required placeholder="Jan Novák" />
+              <input type="text" id="name" name="name" required placeholder="Jan Novák" autocomplete="name" />
+              <span class="field-error" id="error-name" role="alert"></span>
             </div>
             <div class="form-group">
               <label for="phone">Telefon *</label>
-              <input type="tel" id="phone" name="phone" placeholder="+420 xxx xxx xxx" />
+              <input type="tel" id="phone" name="phone" placeholder="+420 xxx xxx xxx" autocomplete="tel" />
+              <span class="field-error" id="error-phone" role="alert"></span>
             </div>
             <div class="form-group">
               <label for="email">E-mail *</label>
-              <input type="email" id="email" name="email" placeholder="vas@email.cz" />
+              <input type="email" id="email" name="email" placeholder="vas@email.cz" autocomplete="email" />
+              <span class="field-error" id="error-email" role="alert"></span>
             </div>
             <div class="form-group">
               <label for="service">Typ služby</label>
@@ -306,6 +309,12 @@
             <div class="form-group">
               <label for="message">Zpráva *</label>
               <textarea id="message" name="message" rows="5" required placeholder="Popište, co potřebujete..."></textarea>
+              <span class="field-error" id="error-message" role="alert"></span>
+            </div>
+            <!-- Honeypot: must remain empty; filled only by bots -->
+            <div class="hp-field" aria-hidden="true">
+              <label for="website">Website</label>
+              <input type="text" id="website" name="website" tabindex="-1" autocomplete="off" />
             </div>
             <button type="submit" class="btn btn-primary btn-full">Odeslat poptávku</button>
             <p class="form-note">* Povinná pole (stačí vyplnit telefon nebo e-mail). Odpovím do 24 hodin.</p>

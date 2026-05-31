@@ -688,6 +688,34 @@ ul {
   border-color: #a03020;
 }
 
+.form-group input.field-invalid,
+.form-group select.field-invalid,
+.form-group textarea.field-invalid {
+  border-color: #a03020;
+  box-shadow: 0 0 0 2px rgba(160, 48, 32, 0.12);
+}
+
+.field-error {
+  display: block;
+  color: #a03020;
+  font-size: 0.80rem;
+  font-style: italic;
+  margin-top: 0.25rem;
+  min-height: 1em;
+}
+
+/* Honeypot: visually hidden, not interactable */
+.hp-field {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
 .form-group textarea {
   resize: vertical;
 }
