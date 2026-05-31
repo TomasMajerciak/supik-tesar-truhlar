@@ -3,9 +3,9 @@
  */
 
 /* === EMAILJS CONFIG — vyplň po registrácii na emailjs.com === */
-var EMAILJS_PUBLIC_KEY  = 'YOUR_PUBLIC_KEY';   // Account > API Keys
-var EMAILJS_SERVICE_ID  = 'YOUR_SERVICE_ID';   // Email Services > Service ID
-var EMAILJS_TEMPLATE_ID = 'YOUR_TEMPLATE_ID';  // Email Templates > Template ID
+var EMAILJS_PUBLIC_KEY  = 'wVuRDgb7TmZodV226';
+var EMAILJS_SERVICE_ID  = 'service_rotdon4';
+var EMAILJS_TEMPLATE_ID = 'template_k4bkzke';
 
 emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY });
 
@@ -74,7 +74,7 @@ emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY });
         el.classList.remove('error');
       });
 
-      // Validate required fields
+      // Validate required fields (name, message)
       var required = form.querySelectorAll('[required]');
       required.forEach(function (field) {
         if (!field.value.trim()) {
@@ -82,6 +82,15 @@ emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY });
           valid = false;
         }
       });
+
+      // Validate: at least phone or email must be filled
+      var phoneField = form.querySelector('#phone');
+      var emailField = form.querySelector('#email');
+      if (!phoneField.value.trim() && !emailField.value.trim()) {
+        phoneField.classList.add('error');
+        emailField.classList.add('error');
+        valid = false;
+      }
 
       if (!valid) {
         var firstError = form.querySelector('.error');
@@ -97,7 +106,9 @@ emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY });
 
       var templateParams = {
         from_name:    form.querySelector('#name').value.trim(),
-        from_contact: form.querySelector('#contact').value.trim(),
+        from_phone:   form.querySelector('#phone').value.trim(),
+        from_email:   form.querySelector('#email').value.trim(),
+        reply_to:     form.querySelector('#email').value.trim() || '',
         service:      form.querySelector('#service').value,
         message:      form.querySelector('#message').value.trim(),
         to_email:     'tomas.majerciak@gmail.com'

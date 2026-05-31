@@ -282,8 +282,12 @@
               <input type="text" id="name" name="name" required placeholder="Jan Novák" />
             </div>
             <div class="form-group">
-              <label for="contact">Telefon nebo e-mail *</label>
-              <input type="text" id="contact" name="contact" required placeholder="+420 xxx xxx xxx" />
+              <label for="phone">Telefon *</label>
+              <input type="tel" id="phone" name="phone" placeholder="+420 xxx xxx xxx" />
+            </div>
+            <div class="form-group">
+              <label for="email">E-mail *</label>
+              <input type="email" id="email" name="email" placeholder="vas@email.cz" />
             </div>
             <div class="form-group">
               <label for="service">Typ služby</label>
@@ -304,7 +308,7 @@
               <textarea id="message" name="message" rows="5" required placeholder="Popište, co potřebujete..."></textarea>
             </div>
             <button type="submit" class="btn btn-primary btn-full">Odeslat poptávku</button>
-            <p class="form-note">* Povinná pole. Odpovím do 24 hodin.</p>
+            <p class="form-note">* Povinná pole (stačí vyplnit telefon nebo e-mail). Odpovím do 24 hodin.</p>
             <div class="form-success" id="form-success" hidden>
               Děkuji za zprávu! Ozvu se co nejdříve.
             </div>
