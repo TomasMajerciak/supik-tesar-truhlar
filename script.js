@@ -1,5 +1,5 @@
 /**
- * Václav Supik – tesař–truhlář  |  script.js
+ * Stolařství Václav Supik  |  script.js
  */
 
 /* === EMAILJS CONFIG — vyplň po registrácii na emailjs.com === */
