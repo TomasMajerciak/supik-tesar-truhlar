@@ -1,5 +1,5 @@
 /* =========================================================
-   Václav Supik – tesař–truhlář  |  style.css
+   Stolařství Václav Supik  |  style.css
    ========================================================= */
 
 /* === RESET & BASE === */
@@ -11,7 +11,7 @@
 
 html {
   scroll-behavior: smooth;
-  font-size: 16px;
+  font-size: 17px;
 }
 
 body {
@@ -169,14 +169,16 @@ ul {
   font-weight: 900;
   color: var(--text);
   letter-spacing: 0.06em;
+  text-align: center;
 }
 
 .logo-profession {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 0.4rem;
   font-family: var(--font-display);
-  font-size: 0.78rem;
+  font-size: 0.91rem;
   font-weight: 700;
   letter-spacing: 0.14em;
   color: var(--brown-mid);
@@ -324,6 +326,7 @@ ul {
   font-size: 3rem;
   font-weight: 900;
   letter-spacing: 0.04em;
+  text-align: center;
   text-shadow: 0 2px 18px rgba(0,0,0,0.75), 0 1px 4px rgba(0,0,0,0.9);
 }
 
@@ -336,7 +339,7 @@ ul {
 }
 
 .hero-prof {
-  font-size: 1.8rem;
+  font-size: 2.1rem;
   font-weight: 700;
   letter-spacing: 0.14em;
   color: var(--brown-light);
@@ -345,7 +348,7 @@ ul {
 
 .hero-dash {
   color: var(--brown-light);
-  font-size: 1.8rem;
+  font-size: 2.1rem;
   opacity: 0.9;
   text-shadow: 0 1px 8px rgba(0,0,0,0.8);
 }
@@ -360,7 +363,7 @@ ul {
   text-shadow: 0 1px 10px rgba(0,0,0,0.75);
 }
 
-.hero-location {
+.hero-services {
   display: block;
   font-size: 1.1rem;
   font-style: normal;
@@ -428,7 +431,7 @@ ul {
   border-radius: 1px;
   border: 2px solid var(--border);
   object-fit: cover;
-  aspect-ratio: 3/4;
+  aspect-ratio: 6/7;
   background: #c8a87a;
 }
 
@@ -529,19 +532,6 @@ ul {
   border: 1px solid var(--border);
   padding: 1.8rem 1.6rem;
   border-radius: 1px;
-  position: relative;
-}
-
-.review-card::before {
-  content: '\201E';
-  font-family: var(--font-display);
-  font-size: 4.5rem;
-  line-height: 1;
-  color: var(--cream-dark);
-  position: absolute;
-  top: 0.3rem;
-  left: 1rem;
-  pointer-events: none;
 }
 
 .review-stars {
@@ -794,6 +784,7 @@ ul {
   font-weight: 900;
   letter-spacing: 0.08em;
   color: #f0e0c4;
+  text-align: center;
 }
 
 .footer-logo-profession {
@@ -802,7 +793,7 @@ ul {
   justify-content: center;
   gap: 0.4rem;
   font-family: var(--font-display);
-  font-size: 0.9rem;
+  font-size: 1.05rem;
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -934,6 +925,11 @@ ul {
     font-size: 2.3rem;
   }
 
+  .hero-prof,
+  .hero-dash {
+    font-size: 1.61rem;
+  }
+
   .section-title {
     font-size: 1.7rem;
   }
@@ -960,6 +956,8 @@ ul {
   .hero { min-height: 440px; }
 
   .hero-name { font-size: 1.9rem; }
+  .hero-prof,
+  .hero-dash { font-size: 1.33rem; }
 
   .gallery-grid,
   .reviews-grid {
